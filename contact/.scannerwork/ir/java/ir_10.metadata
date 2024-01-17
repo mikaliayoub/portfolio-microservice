@@ -1,0 +1,4 @@
+com.contact.controller.ContactControllerTest#testGetAllContact()V
+==
+getAllContact com.contact.controller.ContactController#getAllContact()Ljava/util/List;
+size java.util.List#size()I

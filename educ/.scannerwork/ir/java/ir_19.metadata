@@ -1,0 +1,6 @@
+com.education.controller.EducationControllerTest#testGetEducationByYear()V
+==
+get java.util.List#get(I)Ljava/lang/Object;
+getGraduationYear com.education.entity.Education#getGraduationYear()Ljava/lang/String;
+getEducationByYear com.education.controller.EducationController#getEducationByYear(Ljava/lang/String;)Ljava/util/List;
+size java.util.List#size()I

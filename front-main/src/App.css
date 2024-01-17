@@ -1,0 +1,317 @@
+/* App.css */
+
+/* Style de l'en-tête */
+.header {
+  background-image: linear-gradient(to bottom right, #0074D9, #b7e7cb);
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.background-image {
+  background-image: url('./assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Set a z-index to ensure it's behind other elements */
+}
+
+
+/* Style du menu de navigation */
+.navbar {
+  background-color: #77b5ae; /* Light purple background color */
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow effect */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px; /* Adjust the top margin to create space from the top */
+
+}
+
+.navbar a.active {
+  background-color: #ffffff;
+  color: #77b5ae;
+  border-bottom-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a.active:hover {
+  color: #77b5ae;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a {
+  color: #000000; /* Change link color to a shade of purple */
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+
+
+/* Add a border at the bottom of the menu item on hover */
+.navbar li:hover {
+  border-bottom-color: #fafafa; /* Change border color on hover */
+  transform: translateY(-3px);
+}
+
+/* Add a box shadow on hover for a subtle lift effect */
+.navbar li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+  color: #ffffff;
+}
+
+/* Style des sections de contenu */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  margin-bottom: 40px;
+}
+
+.section h3 {
+  margin-top: 0;
+}
+
+/* Style du pied de page */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow effect */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.profile-img {
+  margin-top: 2px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-school {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.project-competition {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #007bff;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    width: calc(33.33% - 10px);
+    margin-right: 10px;
+  }
+
+  .project-card:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Add this to your CSS file */
+.skill-image {
+  max-width: 100%; /* Set the maximum width to 100% of the container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Sidebar.css */
+
+.sidebar {
+  background-color: #77b5ae; 
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding for the entire sidebar */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow effect */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px; /* Adjust the top margin to create space from the top */
+
+}
+
+.sidebar h4 {
+  margin-bottom: 10px; /* Bottom margin for the name heading */
+}
+
+.sidebar small {
+  display: block; /* Make the job title a block element */
+}
+
+.key-points ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.key-points li {
+  margin-bottom: 15px; /* Bottom margin for each list item */
+}
+
+/* Icon styles */
+.ion-email::before {
+  content: "\1F4E7"; /* Unicode character for email icon */
+  margin-right: 5px; /* Right margin for better spacing */
+}
+
+/* Media query for responsive design */
+@media (max-width: 767px) {
+  .sidebar {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Add this to your CSS file */
+.custom-text-color {
+  color: #77b5ae;
+}
+/* Add this to your CSS file */
+.custom-btn-color {
+  background-color: #8f77b5;
+  color: #fff; /* Set text color to white or any other color that suits your design */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow effect */
+
+}
+
+/* If you want to change the color on hover */
+.custom-btn-color:hover {
+  background-color: #a98cc0; /* Add your desired hover color */
+}
+
+.ion-email:before {
+  content: "\f132";
+}
+
+/* Add this to your CSS file */
+.pagination .page-item.active .page-link {
+  background-color: #080808;
+  border-color: #070707;
+  color: #ffffff;
+}
+
+.pagination .page-link {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.pagination .page-link:hover {
+  background-color: #b5777e;
+  border-color: #b5777e;
+  color: #ffffff;
+}
+
+.key-points ul li.big:after {
+  content: url(./assets/web.svg.png);
+  position: absolute;
+  left: -40px;
+  top: -20px;
+}
+.key-points ul li:after {
+  content: url(./assets/1200px-orange_icon_md.svg.png);
+  position: absolute;
+  left: -23px;
+  top: 0px;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Add space between cards */
+.card {
+  margin-bottom: 20px; 
+}
+
+/* Style the card content */
+.p-card {
+  background-color: #77b5ae; /* Alternating background colors */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Style the card title */
+.p-card .p-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Style the card subtitle */
+.p-card .p-card-subtitle {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style the card footer */
+.p-card .p-card-footer {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Style the list in the card */
+.p-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style the list items in the card */
+.p-card li {
+  margin-bottom: 5px;
+}
+
+.section {
+  overflow: auto; /* or overflow: scroll; */
+  max-height: 700px; 
+}
+.home-section {
+  overflow: auto; /* or overflow: scroll; */
+  max-height: 700px;
+}

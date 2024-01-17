@@ -1,0 +1,8 @@
+com.education.entity.EducationTest#testConstructorAndGetters()V
+com.education.entity.Education#instance-init#
+com.education.entity.Education#<init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+==
+getInstitution com.education.entity.Education#getInstitution()Ljava/lang/String;
+getDegree com.education.entity.Education#getDegree()Ljava/lang/String;
+getGraduationYear com.education.entity.Education#getGraduationYear()Ljava/lang/String;
+getId com.education.entity.Education#getId()I

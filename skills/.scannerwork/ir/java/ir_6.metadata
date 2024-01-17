@@ -1,0 +1,3 @@
+com.skill.controller.SkillController#updateProject(ILcom/skill/entity/Skill;)Lcom/skill/entity/Skill;
+==
+setId com.skill.entity.Skill#setId(I)V

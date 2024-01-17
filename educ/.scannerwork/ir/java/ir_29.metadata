@@ -1,0 +1,12 @@
+com.education.entity.EducationTest#testSetters()V
+com.education.entity.Education#instance-init#
+com.education.entity.Education#<init>()V
+==
+setDegree com.education.entity.Education#setDegree(Ljava/lang/String;)V
+setInstitution com.education.entity.Education#setInstitution(Ljava/lang/String;)V
+setId com.education.entity.Education#setId(I)V
+getInstitution com.education.entity.Education#getInstitution()Ljava/lang/String;
+getDegree com.education.entity.Education#getDegree()Ljava/lang/String;
+getGraduationYear com.education.entity.Education#getGraduationYear()Ljava/lang/String;
+setGraduationYear com.education.entity.Education#setGraduationYear(Ljava/lang/String;)V
+getId com.education.entity.Education#getId()I

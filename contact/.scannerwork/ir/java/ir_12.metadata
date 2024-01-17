@@ -1,0 +1,6 @@
+com.contact.controller.ContactControllerTest#testCreateContact()V
+com.contact.entity.Contact#instance-init#
+com.contact.entity.Contact#<init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+==
+getId com.contact.entity.Contact#getId()I
+createContact com.contact.controller.ContactController#createContact(Lcom/contact/entity/Contact;)Lcom/contact/entity/Contact;

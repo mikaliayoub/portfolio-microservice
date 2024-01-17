@@ -1,0 +1,3 @@
+com.skill.service.SkillService#getSkillByName(Ljava/lang/String;)Lcom/skill/entity/Skill;
+==
+findByName com.skill.repository.SkillRepository#findByName(Ljava/lang/String;)Lcom/skill/entity/Skill;

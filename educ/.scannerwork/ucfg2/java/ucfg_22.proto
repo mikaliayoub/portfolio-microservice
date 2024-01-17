@@ -1,0 +1,27 @@
+
+`com.education.controller.EducationController#getEducationById(I)Lcom/education/entity/Education;Ç
+x/C:/Users/Hp/OneDrive/Bureau/portfolio-microservice/educ/src/main/java/com/education/controller/EducationController.java (""1*Ö
+1 (#Æ
+´
+ (#2
+%0,com.education.repository.EducationRepository"__id*e
+
+__unknown_file (I*G.
+,com.education.controller.EducationController"
+educationRepositoryêç
+ (4$
+%1com.education.entity.Education"Xcom.education.repository.EducationRepository#findById(I)Lcom/education/entity/Education;*P
+
+__unknown_file (4
+2
+%0,com.education.repository.EducationRepository*"
+
+__unknown_file (
+""2findById(I)"2
+ (5&
+$
+%1com.education.entity.Education: 
+
+__unknown_file (
+""B0.
+,com.education.controller.EducationControllerH

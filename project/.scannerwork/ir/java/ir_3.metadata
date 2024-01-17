@@ -1,0 +1,13 @@
+com.project.entity.ProjectTest#testSetters()V
+com.project.entity.Project#<init>()V
+com.project.entity.Project#instance-init#
+java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;
+==
+setDescription com.project.entity.Project#setDescription(Ljava/lang/String;)V
+getId com.project.entity.Project#getId()I
+getSkills com.project.entity.Project#getSkills()Ljava/util/List;
+setId com.project.entity.Project#setId(I)V
+setTitle com.project.entity.Project#setTitle(Ljava/lang/String;)V
+setSkills com.project.entity.Project#setSkills(Ljava/util/List;)V
+getDescription com.project.entity.Project#getDescription()Ljava/lang/String;
+getTitle com.project.entity.Project#getTitle()Ljava/lang/String;

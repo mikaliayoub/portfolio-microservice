@@ -1,0 +1,5 @@
+com.skill.service.SkillService#createSkill(Lcom/skill/entity/Skill;)Lcom/skill/entity/Skill;
+java.lang.IllegalArgumentException#<init>(Ljava/lang/String;)V
+java.lang.IllegalArgumentException#instance-init#
+==
+getLevel com.skill.entity.Skill#getLevel()I

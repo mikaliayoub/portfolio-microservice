@@ -1,0 +1,3 @@
+com.skill.controller.SkillController#getAllSkills()Ljava/util/List;
+==
+findAll com.skill.repository.SkillRepository#findAll()Ljava/util/List;

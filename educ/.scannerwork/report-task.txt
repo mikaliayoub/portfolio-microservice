@@ -1,0 +1,7 @@
+organization=mikaliqualite
+projectKey=mikaliqualite_education
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.52056
+dashboardUrl=https://sonarcloud.io/dashboard?id=mikaliqualite_education
+ceTaskId=AY0ZO3Sk9Gd7d8rK4nyT
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AY0ZO3Sk9Gd7d8rK4nyT

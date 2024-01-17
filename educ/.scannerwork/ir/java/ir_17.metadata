@@ -1,0 +1,4 @@
+com.education.controller.EducationControllerTest#testGetAllEducation()V
+==
+getAllEducation com.education.controller.EducationController#getAllEducation()Ljava/util/List;
+size java.util.List#size()I

@@ -1,0 +1,21 @@
+
+Ccom.skill.controller.SkillController#getAllSkills()Ljava/util/List;|
+r/C:/Users/Hp/OneDrive/Bureau/portfolio-microservice/skills/src/main/java/com/skill/controller/SkillController.java (#"1*‰
+1 (š
+—
+ (*
+%0$com.skill.repository.SkillRepository"__id*Y
+
+__unknown_file (=*;&
+$com.skill.controller.SkillController"
+skillRepository¸µ
+ ()
+%1java.util.List">com.skill.repository.SkillRepository#findAll()Ljava/util/List;*H
+
+__unknown_file (,
+*
+%0$com.skill.repository.SkillRepository2	findAll()""
+ (*
+
+%1java.util.ListB(&
+$com.skill.controller.SkillControllerH

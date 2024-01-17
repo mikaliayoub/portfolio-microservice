@@ -1,0 +1,4 @@
+com.contact.controller.ContactControllerTest#testGetContactById()V
+==
+getId com.contact.entity.Contact#getId()I
+getContactById com.contact.controller.ContactController#getContactById(I)Lcom/contact/entity/Contact;

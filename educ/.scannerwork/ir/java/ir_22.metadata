@@ -1,0 +1,3 @@
+com.education.controller.EducationControllerTest#testDeleteEducation()V
+==
+deleteEducation com.education.controller.EducationController#deleteEducation(I)V

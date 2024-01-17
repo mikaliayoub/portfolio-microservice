@@ -1,0 +1,3 @@
+com.contact.controller.ContactControllerTest#testDeleteContact()V
+==
+deleteContact com.contact.controller.ContactController#deleteContact(I)V

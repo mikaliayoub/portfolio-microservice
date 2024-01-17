@@ -1,0 +1,3 @@
+com.project.service.ProjectService#getAllProjects()Ljava/util/List;
+==
+findAll com.project.repository.ProjectRepository#findAll()Ljava/util/List;

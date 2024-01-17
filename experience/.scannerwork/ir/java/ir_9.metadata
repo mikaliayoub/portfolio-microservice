@@ -1,0 +1,3 @@
+com.experience.controller.ExperienceController#getExperienceById(I)Lcom/experience/entity/Experience;
+==
+findById com.experience.repository.ExperienceRepository#findById(I)Lcom/experience/entity/Experience;

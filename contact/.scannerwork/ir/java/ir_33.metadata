@@ -1,0 +1,3 @@
+com.contact.controller.ContactController#updateContact(ILcom/contact/entity/Contact;)Lcom/contact/entity/Contact;
+==
+setId com.contact.entity.Contact#setId(I)V

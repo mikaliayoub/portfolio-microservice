@@ -1,0 +1,8 @@
+com.skill.service.SkillServiceTest#getSkillByIdEexistingSkill()V
+com.skill.entity.Skill#instance-init#
+com.skill.entity.Skill#<init>(ILjava/lang/String;I)V
+==
+getSkillById com.skill.service.SkillService#getSkillById(I)Lcom/skill/entity/Skill;
+getLevel com.skill.entity.Skill#getLevel()I
+getName com.skill.entity.Skill#getName()Ljava/lang/String;
+findById com.skill.repository.SkillRepository#findById(I)Lcom/skill/entity/Skill;

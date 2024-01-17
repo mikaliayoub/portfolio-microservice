@@ -1,0 +1,7 @@
+com.project.service.ProjectService#updateProject(ILcom/project/entity/Project;)Lcom/project/entity/Project;
+==
+getSkills com.project.entity.Project#getSkills()Ljava/util/List;
+findById com.project.repository.ProjectRepository#findById(I)Lcom/project/entity/Project;
+setTitle com.project.entity.Project#setTitle(Ljava/lang/String;)V
+setSkills com.project.entity.Project#setSkills(Ljava/util/List;)V
+getTitle com.project.entity.Project#getTitle()Ljava/lang/String;

@@ -1,0 +1,27 @@
+
+Fcom.skill.service.SkillService#getSkillById(I)Lcom/skill/entity/Skill;v
+l/C:/Users/Hp/OneDrive/Bureau/portfolio-microservice/skills/src/main/java/com/skill/service/SkillService.java ("1*Ã
+1 (”
+‘
+ (*
+%0$com.skill.repository.SkillRepository"__id*S
+
+__unknown_file (7*5 
+com.skill.service.SkillService"
+skillRepositoryðí
+ (0
+%1com.skill.entity.Skill"Hcom.skill.repository.SkillRepository#findById(I)Lcom/skill/entity/Skill;*H
+
+__unknown_file (,
+*
+%0$com.skill.repository.SkillRepository*"
+
+__unknown_file (
+""2findById(I)"*
+ (1
+
+%1com.skill.entity.Skill: 
+
+__unknown_file (
+""B" 
+com.skill.service.SkillServiceH

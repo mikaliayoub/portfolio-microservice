@@ -1,0 +1,7 @@
+organization=mikaliqualite
+projectKey=mikaliqualite_project
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.52056
+dashboardUrl=https://sonarcloud.io/dashboard?id=mikaliqualite_project
+ceTaskId=AY0ZRDYAwF60JsIVyoy6
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AY0ZRDYAwF60JsIVyoy6

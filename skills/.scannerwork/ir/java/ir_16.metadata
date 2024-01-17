@@ -1,0 +1,12 @@
+com.skill.service.SkillServiceTest#getAllSkills()V
+java.util.ArrayList#<init>()V
+com.skill.entity.Skill#instance-init#
+com.skill.entity.Skill#<init>(ILjava/lang/String;I)V
+java.util.ArrayList#instance-init#
+==
+findAll com.skill.repository.SkillRepository#findAll()Ljava/util/List;
+getAllSkills com.skill.service.SkillService#getAllSkills()Ljava/util/List;
+getName com.skill.entity.Skill#getName()Ljava/lang/String;
+add java.util.List#add(Ljava/lang/Object;)Z
+get java.util.List#get(I)Ljava/lang/Object;
+size java.util.List#size()I

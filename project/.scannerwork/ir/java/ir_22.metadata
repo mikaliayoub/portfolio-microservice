@@ -1,0 +1,7 @@
+com.project.ProjectApplicationTests#getAllProjects()V
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+==
+findAll com.project.repository.ProjectRepository#findAll()Ljava/util/List;
+getAllProjects com.project.service.ProjectService#getAllProjects()Ljava/util/List;
+size java.util.List#size()I

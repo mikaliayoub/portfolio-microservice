@@ -1,0 +1,65 @@
+
+ecom.skill.controller.SkillController#updateProject(ILcom/skill/entity/Skill;)Lcom/skill/entity/Skill;|
+r/C:/Users/Hp/OneDrive/Bureau/portfolio-microservice/skills/src/main/java/com/skill/controller/SkillController.java0 0("startingBlock*¿
+startingBlock0 0(Oä
+á
+/ /(
+%2"
+__annotate**
+
+__unknown_file (
+
+PutMapping*=
+
+__unknown_file (!
+
+skillcom.skill.entity.Skillã
+à
+06 0(B
+%3"
+__annotate*+
+
+__unknown_file (
+RequestBody*=
+
+__unknown_file (!
+
+skillcom.skill.entity.SkillÑ
+Å
+0I 0(N
+skillcom.skill.entity.Skill"__annotation*"
+
+__unknown_file (
+
+%2*"
+
+__unknown_file (
+
+%3*
+1*È
+11 1(®•
+1 1(
+
+%0void" com.skill.entity.Skill#setId(I)V*=
+
+__unknown_file (!
+
+skillcom.skill.entity.Skill*"
+
+__unknown_file (
+""2setId(I)ö
+ó
+2	 2(*
+%1$com.skill.repository.SkillRepository"__id*Y
+
+__unknown_file (=*;&
+$com.skill.controller.SkillController"
+skillRepository"
+2 2(%
+"": 
+
+__unknown_file (
+"":+
+06 0(N
+skillcom.skill.entity.SkillB(&
+$com.skill.controller.SkillControllerH

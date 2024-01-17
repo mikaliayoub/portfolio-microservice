@@ -1,0 +1,3 @@
+com.skill.controller.SkillController#createSkill(Lcom/skill/entity/Skill;)Lcom/skill/entity/Skill;
+==
+getLevel com.skill.entity.Skill#getLevel()I

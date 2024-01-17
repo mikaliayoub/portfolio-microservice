@@ -1,0 +1,65 @@
+
+com.education.controller.EducationController#updateEducation(ILcom/education/entity/Education;)Lcom/education/entity/Education;Ç
+x/C:/Users/Hp/OneDrive/Bureau/portfolio-microservice/educ/src/main/java/com/education/controller/EducationController.java) )(!"startingBlock*‰
+startingBlock)! )([ñ
+ì
+( ((
+%2"
+__annotate**
+
+__unknown_file (
+
+PutMapping*I
+
+__unknown_file (-
++
+	educationcom.education.entity.Educationó
+î
+): )(F
+%3"
+__annotate*+
+
+__unknown_file (
+RequestBody*I
+
+__unknown_file (-
++
+	educationcom.education.entity.Educationê
+ç
+)Q )(Z+
+	educationcom.education.entity.Education"__annotation*"
+
+__unknown_file (
+
+%2*"
+
+__unknown_file (
+
+%3*
+1*ë
+1* *(ºπ
+* *(
+
+%0void"(com.education.entity.Education#setId(I)V*I
+
+__unknown_file (-
++
+	educationcom.education.entity.Education*"
+
+__unknown_file (
+""2setId(I)Æ
+´
++	 +(2
+%1,com.education.repository.EducationRepository"__id*e
+
+__unknown_file (I*G.
+,com.education.controller.EducationController"
+educationRepository"
++ +(-
+"": 
+
+__unknown_file (
+"":7
+): )(Z+
+	educationcom.education.entity.EducationB0.
+,com.education.controller.EducationControllerH

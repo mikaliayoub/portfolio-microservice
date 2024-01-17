@@ -1,0 +1,3 @@
+com.skill.controller.SkillController#getProjectById(I)Lcom/skill/entity/Skill;
+==
+findById com.skill.repository.SkillRepository#findById(I)Lcom/skill/entity/Skill;

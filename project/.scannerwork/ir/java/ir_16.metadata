@@ -1,0 +1,4 @@
+com.project.service.ProjectService#getProjectSkillsById(I)Ljava/util/List;
+==
+getSkills com.project.entity.Project#getSkills()Ljava/util/List;
+findById com.project.repository.ProjectRepository#findById(I)Lcom/project/entity/Project;

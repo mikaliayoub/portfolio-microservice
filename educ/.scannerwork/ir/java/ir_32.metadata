@@ -1,0 +1,3 @@
+com.education.controller.EducationController#getAllEducation()Ljava/util/List;
+==
+findAll com.education.repository.EducationRepository#findAll()Ljava/util/List;

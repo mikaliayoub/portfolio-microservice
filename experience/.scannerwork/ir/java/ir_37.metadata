@@ -1,0 +1,15 @@
+com.experience.entity.ExperienceTest#testConstructorAndGetters()V
+com.experience.entity.Experience#instance-init#
+com.experience.entity.Experience#<init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+java.util.Date#<init>()V
+java.util.Date#instance-init#
+java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;
+==
+getSkills com.experience.entity.Experience#getSkills()Ljava/util/List;
+getEndDate com.experience.entity.Experience#getEndDate()Ljava/util/Date;
+getCompany com.experience.entity.Experience#getCompany()Ljava/lang/String;
+getTitle com.experience.entity.Experience#getTitle()Ljava/lang/String;
+getId com.experience.entity.Experience#getId()I
+getDescription com.experience.entity.Experience#getDescription()Ljava/lang/String;
+getStartDate com.experience.entity.Experience#getStartDate()Ljava/util/Date;
+getPosition com.experience.entity.Experience#getPosition()Ljava/lang/String;

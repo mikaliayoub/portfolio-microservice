@@ -1,0 +1,3 @@
+com.education.controller.EducationController#getEducationById(I)Lcom/education/entity/Education;
+==
+findById com.education.repository.EducationRepository#findById(I)Lcom/education/entity/Education;

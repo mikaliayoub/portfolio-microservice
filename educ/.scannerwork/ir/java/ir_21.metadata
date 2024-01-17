@@ -1,0 +1,6 @@
+com.education.controller.EducationControllerTest#testUpdateEducation()V
+com.education.entity.Education#instance-init#
+com.education.entity.Education#<init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+==
+updateEducation com.education.controller.EducationController#updateEducation(ILcom/education/entity/Education;)Lcom/education/entity/Education;
+getInstitution com.education.entity.Education#getInstitution()Ljava/lang/String;

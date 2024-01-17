@@ -1,0 +1,3 @@
+com.education.controller.EducationController#updateEducation(ILcom/education/entity/Education;)Lcom/education/entity/Education;
+==
+setId com.education.entity.Education#setId(I)V

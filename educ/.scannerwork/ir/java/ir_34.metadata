@@ -1,0 +1,3 @@
+com.education.controller.EducationController#getEducationByYear(Ljava/lang/String;)Ljava/util/List;
+==
+findByGraduationYear com.education.repository.EducationRepository#findByGraduationYear(Ljava/lang/String;)Ljava/util/List;

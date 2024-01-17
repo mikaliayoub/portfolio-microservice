@@ -1,0 +1,4 @@
+com.education.controller.EducationControllerTest#testGetEducationById()V
+==
+getEducationById com.education.controller.EducationController#getEducationById(I)Lcom/education/entity/Education;
+getId com.education.entity.Education#getId()I

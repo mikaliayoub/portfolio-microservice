@@ -1,0 +1,4 @@
+com.experience.controller.ExperienceController#getExperienceSkillById(I)Ljava/util/List;
+==
+getSkills com.experience.entity.Experience#getSkills()Ljava/util/List;
+findById com.experience.repository.ExperienceRepository#findById(I)Lcom/experience/entity/Experience;

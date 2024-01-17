@@ -1,0 +1,33 @@
+
+Ocom.project.controller.ProjectController#getProjectSkillById(I)Ljava/util/List;
+w/C:/Users/Hp/OneDrive/Bureau/portfolio-microservice/project/src/main/java/com/project/controller/ProjectController.java (("1*†
+1 (!¤
+¡
+ (!.
+%0(com.project.repository.ProjectRepository"__id*_
+
+__unknown_file (C*A*
+(com.project.controller.ProjectController"
+projectRepository€ý
+ (5 
+%1com.project.entity.Project"Pcom.project.repository.ProjectRepository#findById(I)Lcom/project/entity/Project;*L
+
+__unknown_file (0
+.
+%0(com.project.repository.ProjectRepository*"
+
+__unknown_file (
+""2findById(I)¨¥
+ (A
+%2java.util.List"6com.project.entity.Project#getSkills()Ljava/util/List;*>
+
+__unknown_file ("
+ 
+%1com.project.entity.Project2getSkills()""
+ (B
+
+%2java.util.List: 
+
+__unknown_file (
+""B,*
+(com.project.controller.ProjectControllerH

@@ -1,0 +1,51 @@
+
+~com.education.controller.EducationController#createEducation(Lcom/education/entity/Education;)Lcom/education/entity/Education;Ç
+x/C:/Users/Hp/OneDrive/Bureau/portfolio-microservice/educ/src/main/java/com/education/controller/EducationController.java# #(!"startingBlock*Â
+startingBlock#! #(Có
+î
+" "(
+%1"
+__annotate*+
+
+__unknown_file (
+PostMapping*I
+
+__unknown_file (-
++
+	educationcom.education.entity.Educationó
+î
+#" #(.
+%2"
+__annotate*+
+
+__unknown_file (
+RequestBody*I
+
+__unknown_file (-
++
+	educationcom.education.entity.Educationê
+ç
+#9 #(B+
+	educationcom.education.entity.Education"__annotation*"
+
+__unknown_file (
+
+%1*"
+
+__unknown_file (
+
+%2*
+1*“
+1$	 $(Æ
+´
+$	 $(2
+%0,com.education.repository.EducationRepository"__id*e
+
+__unknown_file (I*G.
+,com.education.controller.EducationController"
+educationRepository"
+$ $(-
+"":7
+#" #(B+
+	educationcom.education.entity.EducationB0.
+,com.education.controller.EducationControllerH

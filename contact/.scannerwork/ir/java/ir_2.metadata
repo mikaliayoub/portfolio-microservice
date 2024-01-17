@@ -1,0 +1,8 @@
+com.contact.entity.ContactTest#testConstructorAndGetters()V
+com.contact.entity.Contact#instance-init#
+com.contact.entity.Contact#<init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+==
+getMessage com.contact.entity.Contact#getMessage()Ljava/lang/String;
+getId com.contact.entity.Contact#getId()I
+getName com.contact.entity.Contact#getName()Ljava/lang/String;
+getEmail com.contact.entity.Contact#getEmail()Ljava/lang/String;
