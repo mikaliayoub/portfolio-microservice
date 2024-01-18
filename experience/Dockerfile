@@ -1,4 +1,4 @@
-FROM openjdk:17-jre-hotspot
+FROM openjdk:17-jre-slim
 
 WORKDIR /App
 
