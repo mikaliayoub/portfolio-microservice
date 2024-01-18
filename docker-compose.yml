@@ -1,0 +1,118 @@
+version: '3.8'
+
+services:
+  mysqldb:
+    image: mysql:latest
+    container_name: localhost
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+      
+   SERVICE-CONTACT:
+    build: ./contact
+    container_name: SERVICE-CONTACT
+    environment:
+      spring.datasource.url: jdbc:mysql://localhost:3306/contact
+      spring.datasource.username: root
+      spring.datasource.password: 
+      DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
+    restart: always
+    ports:
+      - "8085:8085"
+    links:
+      - mysqldb
+      
+   SERVICE-EDUCATION:
+    build: ./educ
+    container_name: SERVICE-EDUCATION
+    environment:
+      spring.datasource.url: jdbc:mysql://localhost:3306/education?createDatabaseIfNotExist=true
+      spring.datasource.username: root
+      spring.datasource.password: 
+      DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
+    restart: always
+    ports:
+      - "8084:8084"
+    links:
+      - mysqldb
+      
+   SERVICE-EXPERIENCE:
+    build: ./experience
+    container_name: SERVICE-EXPERIENCE
+    environment:
+      spring.datasource.url: jdbc:mysql://localhost:3306/experience
+      spring.datasource.username: root
+      spring.datasource.password: 
+      DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
+    restart: always
+    ports:
+      - "8083:8083"
+    links:
+      - mysqldb
+
+   SERVICE-PROJECT:
+    build: ./project
+    container_name: SERVICE-PROJECT
+    environment:
+      spring.datasource.url: jdbc:mysql://localhost:3306/project?createDatabaseIfNotExist=true
+      spring.datasource.username: root
+      spring.datasource.password: 
+      DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
+    restart: always
+    ports:
+      - "8082:8082"
+    links:
+      - mysqldb
+      
+   SERVICE-SKILL:
+    build: ./skills
+    container_name: SERVICE-SKILL
+    environment:
+      spring.datasource.url: jdbc:mysql://localhost:3306/skill?createDatabaseIfNotExist=true
+      spring.datasource.username: root
+      spring.datasource.password: 
+      DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
+    restart: always
+    ports:
+      - "8081:8081"
+    links:
+      - mysqldb
+      
+  eurekaserver:
+    container_name: eurekaserver
+    build: ./server_eureka
+    ports:
+      - "8761:8761"
+
+  Gateway:
+    container_name: Gateway
+    build: ./gateway
+    ports:
+      - "8888:8888"
+    environment:
+      DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
+    links:
+      - eurekaserver
+      - SERVICE-SKILL
+      - SERVICE-PROJECT
+      - SERVICE-EXPERIENCE
+      - SERVICE-EDUCATION
+      - SERVICE-CONTACT
+
+  reactapp:
+    build: ./front-main
+    container_name: FRONT-APP
+    restart: always
+    ports:
+      - "3000:3000"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: localhost
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8090:80"
