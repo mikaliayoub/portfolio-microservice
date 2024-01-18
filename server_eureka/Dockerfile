@@ -1,15 +1,13 @@
-# Use the AdoptOpenJDK 17 with HotSpot image as the base image
-FROM adoptopenjdk:17-jre-hotspot
-
-# Set the working directory inside the container
+FROM maven:3.8.4-openjdk-17 AS builder
 WORKDIR /app
+COPY ./src ./src
+COPY ./pom.xml .
+RUN mvn clean package
 
-# Copy the Maven target directory into the container
-COPY target/server_eureka-*.jar server_eureka.jar
+# Stage 2: Create the final image
 
-# Expose the default Eureka server port
-EXPOSE 8761
-
-# Command to run the application
-CMD ["java", "-jar", "server_eureka.jar"]
-
+FROM openjdk:17-jdk-alpine
+VOLUME /tmp
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
