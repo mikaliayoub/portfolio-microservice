@@ -1,7 +1,13 @@
-FROM openjdk:17-jre-slim
+FROM maven:3.8.4-openjdk-17 AS builder
+WORKDIR /app
+COPY ./src ./src
+COPY ./pom.xml .
+RUN mvn clean package
 
-WORKDIR /App
+# Stage 2: Create the final image
 
-COPY /target/Point-of-sale-0.0.1-SNAPSHOT.jar .
-
-ENTRYPOINT ["java", "-jar", "Point-of-sale-0.0.1-SNAPSHOT.jar"]
+FROM openjdk:17-jdk-alpine
+VOLUME /tmp
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
