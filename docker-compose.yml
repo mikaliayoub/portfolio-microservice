@@ -9,8 +9,8 @@ services:
       MYSQL_ROOT_PASSWORD: root
     ports:
       - "3306:3306"
-      
-   SERVICE-CONTACT:
+
+  SERVICE-CONTACT:
     build: ./contact
     container_name: SERVICE-CONTACT
     environment:
@@ -23,8 +23,8 @@ services:
       - "8085:8085"
     links:
       - mysqldb
-      
-   SERVICE-EDUCATION:
+
+  SERVICE-EDUCATION:
     build: ./educ
     container_name: SERVICE-EDUCATION
     environment:
@@ -37,8 +37,8 @@ services:
       - "8084:8084"
     links:
       - mysqldb
-      
-   SERVICE-EXPERIENCE:
+
+  SERVICE-EXPERIENCE:
     build: ./experience
     container_name: SERVICE-EXPERIENCE
     environment:
@@ -52,7 +52,7 @@ services:
     links:
       - mysqldb
 
-   SERVICE-PROJECT:
+  SERVICE-PROJECT:
     build: ./project
     container_name: SERVICE-PROJECT
     environment:
@@ -65,8 +65,8 @@ services:
       - "8082:8082"
     links:
       - mysqldb
-      
-   SERVICE-SKILL:
+
+  SERVICE-SKILL:
     build: ./skills
     container_name: SERVICE-SKILL
     environment:
@@ -79,7 +79,7 @@ services:
       - "8081:8081"
     links:
       - mysqldb
-      
+
   eurekaserver:
     container_name: eurekaserver
     build: ./server_eureka
