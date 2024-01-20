@@ -90,7 +90,7 @@ services:
     container_name: gateway
     build: ./gateway
     ports:
-      - "8889:8888"  # Updated port to resolve the conflict
+      - "8889:8888"
     environment:
       DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
     depends_on:
