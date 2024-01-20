@@ -84,7 +84,7 @@ services:
     container_name: eurekaserver
     build: ./server_eureka
     ports:
-      - "8761:8761"
+      - "8762:8761"
 
   gateway:
     container_name: gateway
