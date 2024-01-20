@@ -14,7 +14,7 @@ services:
     build: ./contact
     container_name: service-contact
     environment:
-      spring.datasource.url: jdbc:mysql://mysqldb:3306/contact  # Updated to use service name
+      spring.datasource.url: jdbc:mysql://mysqldb:3306/contact
       spring.datasource.username: root
       spring.datasource.password: 
       DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
@@ -22,7 +22,7 @@ services:
     ports:
       - "8086:8085"
     depends_on:
-      - mysqldb  # Make sure the database service is ready before starting service-contact
+      - mysqldb
 
   service-education:
     build: ./educ
@@ -90,11 +90,11 @@ services:
     container_name: gateway
     build: ./gateway
     ports:
-      - "8888:8888"
+      - "8889:8888"  # Updated port to resolve the conflict
     environment:
       DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
     depends_on:
-      - eurekaserver  # Make sure the Eureka server is ready before starting the gateway
+      - eurekaserver
 
   reactapp:
     build: ./front-main
@@ -106,7 +106,7 @@ services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
-      PMA_HOST: mysqldb  # Updated to use service name
+      PMA_HOST: mysqldb
       PMA_PORT: 3306
       MYSQL_ROOT_PASSWORD: root
     ports:
