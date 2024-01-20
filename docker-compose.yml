@@ -76,7 +76,7 @@ services:
       DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
     restart: always
     ports:
-      - "8090:8081"  # Updated port mapping
+      - "8091:8081"  # Updated port mapping
     depends_on:
       - mysqldb
 
