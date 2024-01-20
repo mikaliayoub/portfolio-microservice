@@ -10,9 +10,9 @@ services:
     ports:
       - "3306:3306"
 
-  SERVICE-CONTACT:
+  service-contact:
     build: ./contact
-    container_name: SERVICE-CONTACT
+    container_name: service-contact
     environment:
       spring.datasource.url: jdbc:mysql://localhost:3306/contact
       spring.datasource.username: root
@@ -24,9 +24,9 @@ services:
     links:
       - mysqldb
 
-  SERVICE-EDUCATION:
+  service-education:
     build: ./educ
-    container_name: SERVICE-EDUCATION
+    container_name: service-education
     environment:
       spring.datasource.url: jdbc:mysql://localhost:3306/education?createDatabaseIfNotExist=true
       spring.datasource.username: root
@@ -38,9 +38,9 @@ services:
     links:
       - mysqldb
 
-  SERVICE-EXPERIENCE:
+  service-experience:
     build: ./experience
-    container_name: SERVICE-EXPERIENCE
+    container_name: service-experience
     environment:
       spring.datasource.url: jdbc:mysql://localhost:3306/experience
       spring.datasource.username: root
@@ -52,9 +52,9 @@ services:
     links:
       - mysqldb
 
-  SERVICE-PROJECT:
+  service-project:
     build: ./project
-    container_name: SERVICE-PROJECT
+    container_name: service-project
     environment:
       spring.datasource.url: jdbc:mysql://localhost:3306/project?createDatabaseIfNotExist=true
       spring.datasource.username: root
@@ -66,9 +66,9 @@ services:
     links:
       - mysqldb
 
-  SERVICE-SKILL:
+  service-skill:
     build: ./skills
-    container_name: SERVICE-SKILL
+    container_name: service-skill
     environment:
       spring.datasource.url: jdbc:mysql://localhost:3306/skill?createDatabaseIfNotExist=true
       spring.datasource.username: root
@@ -86,8 +86,8 @@ services:
     ports:
       - "8761:8761"
 
-  Gateway:
-    container_name: Gateway
+  gateway:
+    container_name: gateway
     build: ./gateway
     ports:
       - "8888:8888"
@@ -95,15 +95,15 @@ services:
       DISCOVERY_SERVICE_URL: http://eurekaserver:8761/eureka/
     links:
       - eurekaserver
-      - SERVICE-SKILL
-      - SERVICE-PROJECT
-      - SERVICE-EXPERIENCE
-      - SERVICE-EDUCATION
-      - SERVICE-CONTACT
+      - service-skill
+      - service-project
+      - service-experience
+      - service-education
+      - service-contact
 
   reactapp:
     build: ./front-main
-    container_name: FRONT-APP
+    container_name: front-app
     restart: always
     ports:
       - "3000:3000"
